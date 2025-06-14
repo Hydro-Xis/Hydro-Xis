@@ -7,7 +7,7 @@ permalink: /team/
 
 ## Team
 
-**We are looking for new team members** [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies) **!**
+<!-- **We are looking for new team members** [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies) **!** -->
 
 ## PI
 
@@ -27,6 +27,7 @@ permalink: /team/
 <ul style="overflow: hidden">
 <li> {{ member.education[0] }} </li>
 <li> {{ member.education[1] }} </li>
+<li> {{ member.education[2] }} </li>
 </ul>
 </div>
 </div>
@@ -34,7 +35,7 @@ permalink: /team/
 
 {% endfor %}
 
-## Current Students and Postdocs
+## Current Members
 
 <div class='jumbotron'>
 {% assign number_printed = 0 %}
@@ -80,8 +81,7 @@ permalink: /team/
 {% endif %}
 </div>
 
-## Alumni
-
+<!-- ## Alumni
 <div class="jumbotron">
 {% assign number_printed = 0 %}
 {% for member in site.data.alumni %}
@@ -116,7 +116,7 @@ permalink: /team/
 
 </div>
 {% endif %}
-</div>
+</div> -->
 
 ## Administrative Support
 

@@ -1,17 +1,18 @@
-- name: Dr. Richard Feynman
+- name: Dr. Peishi Jiang
   photo: headshot.jpg
-  info: Richard C. Tolman Professor, California Institute of Technology
-  email: richard@university.edu
-  github: https://github.com/
-  researchgate: https://www.researchgate.net/
-  scholar: https://scholar.google.com/citations?user=B7vSqZsAAAAJ
-  cv: cv/cv.pdf
+  info: Assistant Professor of Hydrology, The University of Alabama
+  email: peishi.jiang@ua.edu
+  # github: https://github.com/
+  # researchgate: https://www.researchgate.net/
+  scholar: https://scholar.google.com/citations?hl=en&user=oYVbtDUAAAAJ&view_op=list_works
+  cv: cv/PJ-cv-2025June.pdf
   # Change the items in "education" you have (up to 6)
   education:
     [
-      "(1942) Ph.D. Physics, Princeton University",
-      "(1939) B.S. Physics, Massachusetts Institute of Technology",
+      "(2019) Ph.D. Civil Engineering, The University of Illinois at Urbana-Champaign",
+      "(2014) M.Phil. Civil Engineering, Hong Kong University of Science and Technology",
+      "(2011) B.E. Water Resources and Ocean Engineering, Zhejiang University",
     ]
 
   educationshort:
-    ["(1942) Ph.D. Physics, Princeton", "(1939) B.S. Physics, MIT"]
+    ["(2019) Ph.D. UIUC", "(2014) M.Phil. HKUST", "(2011) B.E. ZJU"]

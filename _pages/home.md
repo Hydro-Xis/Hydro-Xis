@@ -7,13 +7,14 @@ permalink: /
 
 ### Welcome!
 
-Theoretical physics is a branch of physics that focuses on the development of mathematical models and theories to understand and explain natural phenomena.
-It plays a crucial role in our understanding of the fundamental laws of the universe and the fundamental particles that make up all matter.
-Research in theoretical physics helps us to make predictions about how the universe works and to test these predictions through experiments.
-It also helps us to understand the fundamental principles that govern the behavior of matter and energy, and to explore the limits of our current knowledge.
-Theoretical physics helps us to make progress in a wide range of fields, including cosmology, particle physics, and quantum mechanics, and it has led to many important discoveries and technological innovations.
+**Hydro-Xis** is a research group led by Dr. Peishi Jiang at the University of Alabama, dedicated to addressing emerging questions in hydrological science. We view hydrological systems -- such as watersheds -- as complex dynamic systems and pursue innovative research through the X dimension. The name **Xis** (prounanced like "axis") reflects this multi-faceted approach, where X stands for:
 
-<div class="container">
+- **Complexity**: Exploring the complexity and self-organized behavior of hydrosystems using information theory and causal inference.
+- **AI**: Developing efficient emulators for hydrosystems (e.g., flow and transport processes) using advanced AI tools such as differentiable programming and neural operators.
+- **Resilience**: Assessing the resilience of hydrosystems in the face of environmental and anthropogenic disturbances.
+- **Etc**: Engaging in additional research efforts such as building cyberinfrastructure for hydro modeling and data analysis.
+
+<!-- <div class="container">
 <div class="row">
 <center>
 <img src="{{ site.url }}{{ site.baseurl }}/images/banner.jpg" width="100%"/><br/>
@@ -22,11 +23,8 @@ Feynman R., The theory of positrons. <i>Phys. Rev.</i> (1949)
 </center>
 </div>
 </div>
-<br/>
+<br/> -->
 
 ### About me
 
-I am a physicist working in the field of quantum mechanics and quantum electrodynamics.
-I received my undergraduate degree in physics from the Massachusetts Institute of Technology (MIT) in 1939 and went on to earn my PhD from Princeton University in 1942.
-After completing my doctoral studies, I worked on the Manhattan Project, where I helped develop the first atomic bombs.
-After the war, I returned to academia, holding teaching and research positions at Cornell and now at the California Institute of Technology.
+I am a hydrologist interested at studying ecohydrological complex systems using novel data-driven methods and hybrid physics-AI approaches. Currently, I am an Assistant Professor in the Department of Civil, Construction and Environmental Engineering at the University of Alabama (starting August 2025). I received my Ph.D. from the department of Civil and Environmental Engineering at the University of Illinois at Urbana-Champaign in 2019, advised by Prof. Praveen Kumar. Since then, I worked at PNNL during 2019-2025 and spent most of my time in River Corridor SFA, ExaSheds, and IDEAS-Watersheds projects supported by the US Department of Energy.
