@@ -1,54 +1,377 @@
-@incollection{example_invited_talk,
-  author = {J. Doe},
-  note = {Example Location},
-  publisher = {Example Talk Name},
-  year = {2040},
-  keywords = "invited",
+# Preprints
+@unpublished{Ou2024,
+  author={Zhigang Ou and Congyi Nai and Baoxiang Pan and Ming Pan and Chaopeng Shen and Peishi Jiang and Xingcai Liu and Qiuhong Tang and Wenqing Li and Yi Zheng},
+  title={DRUM: Diffusion-based runoff model for probabilistic flood forecasting}, 
+  year={2024},
+  journal = {arxiv},
+  primaryClass={physics.geo-ph},
+  doi = {arXiv:2412.11942},
 }
 
+# Published papers
+@article{Jiang2025,
+  author = {Jiang, Peishi and Kidger, Patrick and Bandai, Toshiyuki and Baldocchi, Dennis and Liu, Heping and Xiao, Yi and Zhang, Qianyu and Wang, Carlos Tianxin and Steefel, Carl and Chen, Xingyuan},
+  title = {JAX-CanVeg: A Differentiable Land Surface Model},
+  journal = {Water Resources Research},
+  volume = {61},
+  number = {3},
+  keywords = {differentiable land surface modeling, hybrid modeling, stomatal conductance, water stress, optimization trade-off},
+  doi = {https://doi.org/10.1029/2024WR038116},
+  abstract = {Abstract Land surface models consider the exchange of water, energy, and carbon along the soil-canopy-atmosphere continuum, which is challenging to model due to their complex interdependency and associated challenges in representing and parameterizing them. Differentiable modeling provides a new opportunity to capture these complex interactions by seamlessly hybridizing process-based models with deep neural networks (DNNs), benefiting both worlds, that is, the physical interpretation of process-based models and the learning power of DNNs. Here, we developed a differentiable land model, JAX-CanVeg. The new model builds on the legacy CanVeg by incorporating advanced functionalities through JAX in the graphic processing unit support, automatic differentiation, and integration with DNNs. We demonstrated JAX-CanVeg's hybrid modeling capability by applying the model at four flux tower sites with varying aridity. To this end, we developed a hybrid version of the Ball-Berry equation that emulates the water stress impact on stomatal closure to explore the capability of the hybrid model in (a) improving the simulations of latent heat fluxes \$(LE)\$ and net ecosystem exchange \$(NEE)\$, (b) improving the optimization trade-off when learning observations of both \$LE\$ and \$NEE\$, and (c) benefiting a multi-layer canopy model setup. Our results show that the proposed hybrid model improved the simulations of \$LE\$ and \$NEE\$ at all sites, with an improved optimization trade-off over the process-based model. Additionally, the multi-layer canopy set benefited hybrid modeling at some sites. Anchored in differentiable modeling, our study provides a new avenue for modeling land-atmosphere interactions by leveraging the benefits of both data-driven learning and process-based modeling.},
+  year = {2025}
+}
+
+@article{Jiang2024,
+  author = {Peishi Jiang and Pin Shuai and Alexander Y. Sun and Xingyuan Chen},
+  title = {Optimizing parameter learning and calibration in an integrated hydrological model: Impact of observation length and information},
+  journal = {Journal of Hydrology},
+  volume = {643},
+  pages = {131889},
+  year = {2024},
+  issn = {0022-1694},
+  doi = {https://doi.org/10.1016/j.jhydrol.2024.131889},
+  keywords = {Watershed modeling, Parameter estimation, Observation length, Observation information},
+  abstract = {Integrated hydrological modeling is gaining popularity due to its mechanistic representation of the surface and subsurface processes. However, estimating the parameters of such process-based models can be computationally expensive if careful consideration is not given to the length of streamflow observations used during model calibration. Here we evaluate the influence of the calibration period, the role of streamflow information content, and the gage location in parameter learning and calibration of a fully integrated hydrological model, the Advanced Terrestrial Simulator (ATS). We conducted the study at the Upper Neversink River Watershed within the Delaware River Basin, where streamflow observations are available at 11 gages with varying record lengths. We leveraged a recently proposed knowledge-informed deep learning technique for parameter estimation. To assess the impact of observation period and gage location, model parameters were learned on scenarios using different chunks of streamflow observations, including (1) using only one year or consecutive multiple years of streamflow observations at the watershed outlet and (2) using one shared year of observations at each of the sub-catchment gages, with the period from 1991-10-01 through 1999-09-30 as the overall calibration period. Using the estimated parameters, ATS was rerun for each scenario and evaluated on a subsequent period from 1999-10-01 through 2002-09-30. Results show that the basin outlet discharge prediction is mostly improved when using at least four years of observations for parameter estimation. Further, the performance of the calibrated ATS run correlates with the information content of the observed streamflows, suggesting that the information-theoretic metrics could be indicators for selecting the observation period for parameter estimation. Finally, we find that observations from an informative gage can be used in learning parameters to predict the streamflow at a nearby gage, which would potentially lower the computational expense by reducing the watershed domain used in calibration. Our success underscores the potential of using information theory to achieve robust model parameter estimation on a reduced computational budget.}
+}
+
+@article{Sun2024,
+author = {Sun, Alexander Y. and Jiang, Peishi and Shuai, Pin and Chen, Xingyuan},
+title = {Bridging Hydrological Ensemble Simulation and Learning Using Deep Neural Operators},
+journal = {Water Resources Research},
+volume = {60},
+number = {10},
+keywords = {neural operator learning, DeepONet, ensemble simulation, streamflow forecasting, hybrid machine learning, uncertainty quantification},
+doi = {https://doi.org/10.1029/2024WR037555},
+abstract = {Abstract Ensemble-based simulation and learning (ESnL) has long been used in hydrology for parameter inference, but computational demands of process-based ESnL can be quite high. To address this issue, we propose a deep neural operator learning approach. Neural operators are generic machine learning algorithms that can learn functional mappings between infinite-dimensional spaces, providing a highly flexible tool for scientific machine learning. Our approach is built upon DeepONet, a specific deep neural operator, and is designed to address several common problems in hydrology, namely, model parameter estimation, prediction at ungaged locations, and uncertainty quantification. Here we demonstrate the effectiveness of our DeepONet-based workflow using an existing large model ensemble created for an eastern U.S. watershed that is instrumented with 10 streamflow gages. Results suggest DeepONet achieves high efficiency in learning an ML surrogate model from the model ensemble, with the modified Kling-Gupta Efficiency exceeding 0.9 on holdout test sets. Parameter inference, carried out using the trained DeepONet surrogate model and genetic algorithm, also yields robust results. Additionally, we formulate and train a separate DeepONet model for physics-informed, seq-to-seq streamflow forecasting, which further reduces biases in the pre-trained DeepONet surrogate model. While this study focuses primarily on a single watershed, our approach is general and may be extended to enable learning from model ensembles across multiple basins or models. Thus, this research represents a significant contribution to the application of hybrid machine learning in hydrology.},
+year = {2024}
+}
+
+@article{Sun2024b,
+author = {Sun, Alexander Y. and Save, Himanshu and Rateb, Ashraf and Jiang, Peishi and Scanlon, Bridget R.},
+title = {Deciphering the Role of Total Water Storage Anomalies in Mediating Regional Flooding},
+journal = {Geophysical Research Letters},
+volume = {51},
+number = {16},
+keywords = {flood early warning, GRACE and GRACE-FO, compound event analysis, causal effect analysis},
+doi = {https://doi.org/10.1029/2023GL108126},
+abstract = {Abstract Regional floods result from various flood generation mechanisms. Traditional analyses mainly link flooding to extreme rainfall, with limited input from soil moisture. Total water storage (TWS) is a holistic measure of basin wetness, including additional storage components from surface water, snow, and groundwater. Utilizing a new 5-day Gravity Recovery and Climate Experiment and its Follow On (GRACE(-FO)) data set, we investigated the linkage between short-term TWS anomaly (TWSA) and regional flooding. The 5-day TWSA solutions revealed flood signals missed by monthly TWSA solutions. Global basins exhibit distinct storage-discharge co-evolution patterns, offering new insights into flood mechanisms and propensity. Our bivariate event analyses show the annual maximum river discharges co-occur more often with the TWSA maxima than with precipitation in many basins. Further analyses revealed TWSA's time-lagged effect on river discharge, particularly in basins susceptible to floods triggered by saturation-excess runoff. The 5-day TWSA provides a new source of information for enhancing global flood preparedness.},
+year = {2024}
+}
+
+@article{Bandai2024,
+author = {Bandai, Toshiyuki and Ghezzehei, Teamrat A. and Jiang, Peishi and Kidger, Patrick and Chen, Xingyuan and Steefel, Carl I.},
+title = {Learning Constitutive Relations From Soil Moisture Data via Physically Constrained Neural Networks},
+journal = {Water Resources Research},
+volume = {60},
+number = {7},
+keywords = {inverse modeling, soil hydraulic functions, physics-informed machine learning, neural networks, soil moisture},
+doi = {https://doi.org/10.1029/2024WR037318},
+abstract = {Abstract The constitutive relations of the Richardson-Richards equation encode the macroscopic properties of soil water retention and conductivity. These soil hydraulic functions are commonly represented by models with a handful of parameters. The limited degrees of freedom of such soil hydraulic models constrain our ability to extract soil hydraulic properties from soil moisture data via inverse modeling. We present a new free-form approach to learning the constitutive relations using physically constrained neural networks. We implemented the inverse modeling framework in a differentiable modeling framework, JAX, to ensure scalability and extensibility. For efficient gradient computations, we implemented implicit differentiation through a nonlinear solver for the Richardson-Richards equation. We tested the framework against synthetic noisy data and demonstrated its robustness against varying magnitudes of noise and degrees of freedom of the neural networks. We applied the framework to soil moisture data from an upward infiltration experiment and demonstrated that the neural network-based approach was better fitted to the experimental data than a parametric model and that the framework can learn the constitutive relations.},
+year = {2024}
+}
+
+@article{Li2024,
+  author = {Li, Bing and Li, Zhi and Zheng, Jianqiu and Jiang, Peishi and Holmquist, James and Regier, Peter J. and Hammond, Glenn E. and Ward, Nicholas D. and Myers-Pigg, Allison and Rich, Roy and Huang, Wei and O’Meara, Theresa A. and Pennington, Stephanie C. and Megonigal, Patrick and Bailey, Vanessa L. and Chen, Xingyuan},
+  title = {Integrated Effects of Site Hydrology and Vegetation on Exchange Fluxes and Nutrient Cycling at a Coastal Terrestrial-Aquatic Interface},
+  journal = {Water Resources Research},
+  volume = {60},
+  number = {6},
+  keywords = {coastal terrestrial aquatic interface, integrated hydrology model, biogeochemical, carbon cycling, redox condition, exchange flux key messages},
+  doi = {https://doi.org/10.1029/2023WR035580},
+  abstract = {Abstract The complex interactions among soil, vegetation, and site hydrologic conditions driven by precipitation and tidal cycles control the biogeochemical transformations and bi-directional exchange of carbon and nutrients across the terrestrial–aquatic interfaces (TAIs) in coastal regions. This study uses a highly mechanistic model, Advanced Terrestrial Simulator (ATS)-PFLOTRAN, to explore how these interactions affect exchanges of materials and carbon and nitrogen cycling. We used a transect in the Chesapeake Bay region that spans zones of open water, coastal wetland, transition, and upland forest. We designed several simulation scenarios to parse the effects of the individual controlling factors and the sensitivity of carbon cycling to reaction rate parameters derived from laboratory experiments. Our simulations reveal an active zone for carbon cycling under the transition zones between the wetland and the upland. Evapotranspiration is found to enhance the exchange fluxes between the surface and subsurface domains, resulting in a higher dissolved oxygen concentration in the TAIs. The transport of organic carbon derived from plant leaves and roots provide an additional source of organic carbon needed for the aerobic respiration and denitrification processes in the TAIs. The variability in reaction rate parameters associated with microbial activities is also found to play a dominant role in controlling the heterogeneity and dynamics of the simulated redox conditions. This modeling-focused exploratory study enabled us to better understand the complex interactions among soil, water and microbes that govern the hydro-biogeochemical processes at the TAIs, which is an important step toward representing coastal ecosystems in larger-scale Earth system models.},
+  year = {2024}
+}
+
+@Article{Muller2024,
+  AUTHOR = {Muller, K. A. and Jiang, P. and Hammond, G. and Ahmadullah, T. and Song, H.-S. and Kukkadapu, R. and Ward, N. and Bowe, M. and Chu, R. K. and Zhao, Q. and Garayburu-Caruso, V. A. and Roebuck, A. and Chen, X.},
+  TITLE = {Lambda-PFLOTRAN 1.0: a workflow for incorporating organic matter chemistry informed by ultra high resolution mass spectrometry into biogeochemical modeling},
+  JOURNAL = {Geoscientific Model Development},
+  VOLUME = {17},
+  YEAR = {2024},
+  NUMBER = {24},
+  PAGES = {8955--8968},
+  DOI = {10.5194/gmd-17-8955-2024},
+  ABSTRACT = {Organic matter (OM) composition plays a central role in microbial respiration of dissolved organic matter and subsequent biogeochemical reactions. Here, a direct connection of organic matter chemistry and thermodynamics to reactive transport simulators has been achieved through the newly developed Lambda-PFLOTRAN workflow tool that succinctly incorporates carbon chemistry data generated from Fourier transform ion cyclotron resonance mass spectrometry (FTICR-MS) into reaction networks to simulate organic matter degradation and the resulting biogeochemistry. Lambda-PFLOTRAN is a Python-based workflow, executed through a Jupyter notebook interface, that digests raw FTICR-MS data, develops a representative reaction network based on substrate-explicit thermodynamic modeling (also termed lambda modeling due to its key thermodynamic parameter λ used therein), and completes a biogeochemical simulation with the open source, reactive flow and transport code PFLOTRAN. The workflow consists of the following five steps: configuration, thermodynamic (lambda) analysis, sensitivity analysis, parameter estimation, and simulation output and visualization. Two test cases are provided to demonstrate the functionality of the Lambda-PFLOTRAN workflow. The first test case uses laboratory incubation data of temporal oxygen depletion to fit lambda parameters (i.e., maximum utilization rate and microbial carrying capacity). A slightly more complex second test case fits multiple lambda formulation and soil organic matter release parameters to temporal greenhouse gas generation measured during a soil incubation. Overall, the Lambda-PFLOTRAN workflow facilitates upscaling by using molecular-scale characterization to inform biogeochemical processes occurring at larger scales.}
+}
+
+@article{Zhou2024,
+    author = {Zhou, Yadong and Jiang, Peishi and Chen, Ping and Jia, Endong and Welch, Cole S. and Zhao, Qian and Dhas, Jeffrey A. and Graham, Emily B. and Chen, Xingyuan and Zhang, Xin and Zhu, Zihua},
+    title = {Novel principal component analysis tool based on python for analysis of complex spectra of time-of-flight secondary ion mass spectrometry},
+    journal = {Journal of Vacuum Science & Technology A},
+    volume = {42},
+    number = {2},
+    pages = {023204},
+    year = {2024},
+    month = {02},
+    abstract = {Time-of-flight secondary ion mass spectrometry (ToF-SIMS) is a powerful surface analysis tool, which can simultaneously provide elemental, isotopic, and molecular information with part per million (ppm) sensitivity. However, each spectrum may be composed of hundreds of ion signals, which makes the spectra data complex. Principal component analysis (PCA) is a multivariate analysis technique that has been widely used to figure out the variances among samples in ToF-SIMS spectra data analysis and is showing great success in the explanation of complex ToF-SIMS spectra. So far, several software tools have been developed for PCA of ToF-SIMS spectra; however, none of them are freely available. Such a situation leads to some difficulties in extending applications of PCA to various research fields. More importantly, it has long been challenging for common researchers to understand PCA plots and extract chemical differences among samples. In this work, we developed a new and flexible software tool (named “advanced spectra pca toolbox”) based on python for PCA of complex ToF-SIMS spectra along with an easy-to-read manual. It can generate data analysis reports automatically to explain chemical differences among samples, allowing less experienced researchers to easily understand tricky PCA results. Moreover, it is expandable and compatible with artificial intelligence/machine learning functions. Pure goethite and different lignin adsorbed goethite samples were used as a model system to demonstrate our new software tool, proving that our software tool can be readily used in complex spectra data processing. Our new software tool is open-source, convenient, flexible, and expandable. We expect this open-source tool will benefit the ToF-SIMS community.},
+    issn = {0734-2101},
+    doi = {10.1116/6.0003355},
+}
+
+@article{Shuai2023,
+  author = {Shuai, Pin and Jiang, Peishi and Coon, Ethan T. and Chen, Xingyuan},
+  title = {The importance of explicitly representing the streambed in watershed models},
+  journal = {Hydrological Processes},
+  volume = {37},
+  number = {12},
+  keywords = {hydrologic exchange flux, integrated watershed modelling, streambed, surface water-groundwater interactions},
+  doi = {https://doi.org/10.1002/hyp.15043},
+  abstract = {Abstract The streambed is the critical interface between the aquatic and terrestrial systems and hosts important biogeochemical hot spots within river corridors. Although the streambed characteristics are significantly different from those of its surrounding soil, the streambed itself has not been explicitly represented in watershed models. Here, we explicitly incorporated a streambed layer into an integrated hydrologic model through model parameterization and discretization. We examined the hydrological effects of streambed characteristics, including hydraulic conductivity (K), layer thickness, and resolution, on the exchange fluxes across the streambed as well as the streamflow at the watershed outlet. The numerical experiments were performed in the American River Watershed, a headwater, mountainous watershed within the Yakima River Basin in central Washington. Despite having a negligible effect on the watershed streamflow, an explicit representation of the streambed with distinctive properties dramatically changed the magnitude and variability of the exchange flux. In general, a larger streambed K along with a thicker streambed layer induced larger exchange fluxes. The exchange flux was most sensitive to the streambed resolution. A finer streambed resolution increased exchange fluxes per unit area while reducing the overall exchange volumes across the entire streambed. The amount of baseflow decreased by 6\% as the streambed resolution increased from 250 to 50 m. This finding is important because these hydrological changes may, in turn, affect the exchange of nutrients and contaminants between surface water and groundwater and the associated biogeochemical processes. Our work demonstrated the importance of representing streambeds in fully distributed, process-based watershed models to better capture the exchange flow dynamics in river corridors.},
+  year = {2023}
+}
+
+@article{Adebayo2024,
+  title = {A hydrogeophysical framework to assess infiltration during a simulated ecosystem-scale flooding experiment},
+  journal = {Journal of Hydrology},
+  volume = {626},
+  year = {2023},
+  issn = {0022-1694},
+  doi = {https://doi.org/10.1016/j.jhydrol.2023.130243},
+  author = {Moses B. Adebayo and Vanessa L. Bailey and Xingyuan Chen and Anya M. Hopple and Peishi Jiang and Bing Li and Zhi Li and James M. Martin-Hayden and J. Patrick Megonigal and Peter J. Regier and Roy Rich and James C. Stegen and Richard W. Smith and Nicholas D. Ward and Stella C. Woodard and Kennedy O. Doro},
+  keywords = {Simulated flooding, Soil saturation, Time-lapse electrical resistivity, ATS-based flow model},
+  abstract = {This study presents a framework to quantify changes in soil saturation in response to flooding caused by extreme hydrologic perturbation on coastal ecosystems at the interfaces and transition between terrestrial and aquatic systems. Subsurface heterogeneity limits the use of in situ measurements to quantify subsurface flow during flooding due to the spatial discontinuity in the measured data. While geophysical methods, including time-lapse electrical resistivity imaging (ERI), are increasingly used to monitor soil hydrological processes, their abilities to parameterize flow models have been underutilized. This study combines background ERI, ground penetrating radar (GPR), time-lapse ERI, soil characterization, and a numerical flow model developed using an Advanced Terrestrial Simulator (ATS) code to quantify the infiltration pathway and describe the hydrological dynamics during a simulated flooding experiment. We assessed the use of two conceptual models developed using [1] ERI and GPR data that described the stratigraphic distribution, and time-lapse ERI that mapped permeability contrast, and [2] information from a national soil database for capturing changes in saturation. Combining the ERI and GPR results with soil core data revealed the stratigraphic heterogeneity at the site with a silty clay layer from 1 to 2 m between an overlying loamy topsoil and an underlying saturated silty sand. This silty clay layer could restrict deep infiltration. The time-lapse ERI showed up to a 35% decrease in resistivity, which correlated with soil moisture data (R2 value > 0.53) and revealed preferential infiltration zones used to inform the flow model. Numerical simulation results from both the geophysics- and soil database-informed models quantified changes in soil saturation with calculated soil moistures that agreed with field data. The geophysics-informed model captured more of the system’s variability, reflective of shallow subsurface heterogeneities. The framework presented will serve as a precursor for a robust ecohydrological model that can describe the impacts of extreme events induced by climate change on coastal ecosystems.}
+}
+
+@Article{Jiang2023,
+  AUTHOR = {Jiang, P. and Shuai, P. and Sun, A. and Mudunuru, M. K. and Chen, X.},
+  TITLE = {Knowledge-informed deep learning for hydrological model calibration: an application to Coal Creek Watershed in Colorado},
+  JOURNAL = {Hydrology and Earth System Sciences},
+  VOLUME = {27},
+  YEAR = {2023},
+  NUMBER = {14},
+  PAGES = {2621--2644},
+  DOI = {10.5194/hess-27-2621-2023},
+  ABSTRACT = {Deep learning (DL)-assisted inverse mapping has shown promise in hydrological model calibration by directly estimating parameters from observations. However, the increasing computational demand for running the state-of-the-art hydrological model limits sufficient ensemble runs for its calibration. In this work, we present a novel knowledge-informed deep learning method that can efficiently conduct the calibration using a few hundred realizations. The method involves two steps. First, we determine decisive model parameters from a complete parameter set based on the mutual information (MI) between model responses and each parameter computed by a limited number of realizations (∼50). Second, we perform more ensemble runs (e.g., several hundred) to generate the training sets for the inverse mapping, which selects informative model responses for estimating each parameter using MI-based parameter sensitivity. We applied this new DL-based method to calibrate a process-based integrated hydrological model, the Advanced Terrestrial Simulator (ATS), at Coal Creek Watershed, CO. The calibration is performed against observed stream discharge (Q) and remotely sensed evapotranspiration (ET) from the water year 2017 to 2019. Preliminary MI analysis on 50 realizations resulted in a down-selection of 7 out of 14 ATS model parameters. Then, we performed a complete MI analysis on 396 realizations and constructed the inverse mapping from informative responses to each of the selected parameters using a deep neural network. Compared with calibration using observations covering all time steps, the new inverse mapping improves parameter estimations, thus enhancing the performance of ATS forward model runs. The Nash–Sutcliffe efficiency (NSE) of streamflow predictions increases from 0.53 to 0.8 when calibrating against Q alone. Using ET observations, on the other hand, does not show much improvement on the performance of ATS modeling mainly due to both the uncertainty of the remotely sensed product and the insufficient coverage of the model ET ensemble in capturing the observation. By using observed Q only, we further performed a multiyear analysis and show that Q is best simulated (NSE > 0.8) by including in the calibration the dry-year flow dynamics that show more sensitivity to subsurface characteristics than the other wet years. Moreover, when continuing the forward runs till the end of 2021, the calibrated models show similar simulation performances during this evaluation period as the calibration period, demonstrating the ability of the estimated parameters in capturing climate sensitivity. Our success highlights the importance of leveraging data-driven knowledge in DL-assisted hydrological model calibration.}
+}
+
+@article{Jiang2023b,
+  author = {Jiang, Peishi and Yang, Zhao and Wang, Jiali and Huang, Chenfu and Xue, Pengfei and Chakraborty, T. C. and Chen, Xingyuan and Qian, Yun},
+  title = {Efficient Super-Resolution of Near-Surface Climate Modeling Using the Fourier Neural Operator},
+  journal = {Journal of Advances in Modeling Earth Systems},
+  volume = {15},
+  number = {7},
+  keywords = {zero-shot super resolution, the Fourier neural operator, WRF, regional climate modeling, near-surface heat-exposure estimates},
+  doi = {https://doi.org/10.1029/2023MS003800},
+  abstract = {Abstract Downscaling methods are critical in efficiently generating high-resolution atmospheric data. However, state-of-the-art statistical or dynamical downscaling techniques either suffer from the high computational cost of running a physical model or require high-resolution data to develop a downscaling tool. Here, we demonstrate a recently proposed zero-shot super-resolution method, the Fourier neural operator (FNO), to efficiently perform downscaling without the need for high-resolution data. Because the FNO learns dynamics in Fourier space, FNO is a resolution-invariant emulator; it can be trained at a coarse resolution and produces emulation at any high resolution. We applied FNO to downscale a 4-km resolution Weather Research and Forecasting (WRF) Model simulation of near-surface heat-related variables over the Great Lakes region. The FNO is driven by the atmospheric forcings and topographic features used in the WRF model at the same resolution. We incorporated a physics-constrained loss in FNO by using the Clausius–Clapeyron relation to better constrain the relations among the emulated states. Trained on merely 600 WRF snapshots at 4-km resolution, the FNO shows comparable performance with a widely-used convolutional network, U-Net, achieving averaged modified Kling–Gupta Efficiency of 0.88 and 0.94 on the test data set for temperature and pressure, respectively. We then employed the FNO to produce 1-km emulations to reproduce the fine climate features. Further, by taking the WRF simulation as ground truth, we show consistent performances at the two resolutions, suggesting the reliability of FNO in producing high-resolution dynamics. Our study demonstrates the potential of using FNO for zero-shot super-resolution in generating first-order estimation on atmospheric modeling.},
+  year = {2023}
+}
+
+@ARTICLE{Jiang2022,
+  AUTHOR={Jiang, Peishi  and Chen, Xingyuan  and Missik, Justine E. C.  and Gao, Zhongming  and Liu, Heping  and Verbeke, Brittany A },
+  TITLE={Encoding diel hysteresis and the Birch effect in dryland soil respiration models through knowledge-guided deep learning},
+  JOURNAL={Frontiers in Environmental Science},
+  VOLUME={Volume 10 - 2022},
+  YEAR={2022},
+  DOI={10.3389/fenvs.2022.1035540},
+  ISSN={2296-665X},
+  ABSTRACT={<p>Soil respiration in dryland ecosystems is challenging to model due to its complex interactions with environmental drivers. Knowledge-guided deep learning provides a much more effective means of accurately representing these complex interactions than traditional Q10-based models. Mutual information analysis revealed that future soil temperature shares more information with soil respiration than past soil temperature, consistent with their clockwise diel hysteresis. We explicitly encoded diel hysteresis, soil drying, and soil rewetting effects on soil respiration dynamics in a newly designed Long Short Term Memory (LSTM) model. The model takes both past and future environmental drivers as inputs to predict soil respiration. The new LSTM model substantially outperformed three Q10-based models and the Community Land Model when reproducing the observed soil respiration dynamics in a semi-arid ecosystem. The new LSTM model clearly demonstrated its superiority for temporally extrapolating soil respiration dynamics, such that the resulting correlation with observational data is up to 0.7 while the correlations of the Q10-based models and the Community Land Model (CLM) are less than 0.4. Our results underscore the high potential for knowledge-guided deep learning to replace Q10-based soil respiration modules in Earth system models.</p>}
+}
+
+@ARTICLE{Mudunuru2022,
+  AUTHOR={Mudunuru, Maruti K.  and Son, Kyongho  and Jiang, Peishi  and Hammond, Glenn  and Chen, Xingyuan },
+  TITLE={Scalable deep learning for watershed model calibration},
+  JOURNAL={Frontiers in Earth Science},
+  VOLUME={Volume 10 - 2022},
+  YEAR={2022},
+  URL={https://www.frontiersin.org/journals/earth-science/articles/10.3389/feart.2022.1026479},
+  DOI={10.3389/feart.2022.1026479},
+  ISSN={2296-6463},
+  ABSTRACT={<p>Watershed models such as the Soil and Water Assessment Tool (SWAT) consist of high-dimensional physical and empirical parameters. These parameters often need to be estimated/calibrated through inverse modeling to produce reliable predictions on hydrological fluxes and states. Existing parameter estimation methods can be time consuming, inefficient, and computationally expensive for high-dimensional problems. In this paper, we present an accurate and robust method to calibrate the SWAT model (i.e., 20 parameters) using scalable deep learning (DL). We developed inverse models based on convolutional neural networks (CNN) to assimilate observed streamflow data and estimate the SWAT model parameters. Scalable hyperparameter tuning is performed using high-performance computing resources to identify the top 50 optimal neural network architectures. We used ensemble SWAT simulations to train, validate, and test the CNN models. We estimated the parameters of the SWAT model using observed streamflow data and assessed the impact of measurement errors on SWAT model calibration. We tested and validated the proposed scalable DL methodology on the American River Watershed, located in the Pacific Northwest-based Yakima River basin. Our results show that the CNN-based calibration is better than two popular parameter estimation methods (i.e., the generalized likelihood uncertainty estimation [GLUE] and the dynamically dimensioned search [DDS], which is a global optimization algorithm). For the set of parameters that are sensitive to the observations, our proposed method yields narrower ranges than the GLUE method but broader ranges than values produced using the DDS method within the sampling range even under high relative observational errors. The SWAT model calibration performance using the CNNs, GLUE, and DDS methods are compared using <italic>R</italic><sup>2</sup> and a set of efficiency metrics, including Nash-Sutcliffe, logarithmic Nash-Sutcliffe, Kling-Gupta, modified Kling-Gupta, and non-parametric Kling-Gupta scores, computed on the observed and simulated watershed responses. The best CNN-based calibrated set has scores of 0.71, 0.75, 0.85, 0.85, 0.86, and 0.91. The best DDS-based calibrated set has scores of 0.62, 0.69, 0.8, 0.77, 0.79, and 0.82. The best GLUE-based calibrated set has scores of 0.56, 0.58, 0.71, 0.7, 0.71, and 0.8. The scores above show that the CNN-based calibration leads to more accurate low and high streamflow predictions than the GLUE and DDS sets. Our research demonstrates that the proposed method has high potential to improve our current practice in calibrating large-scale integrated hydrologic models.</p>}
+}
+
+@article{Jiang2022b,
+  author = {Jiang, Peishi and Son, Kyongho and Mudunuru, Maruti K. and Chen, Xingyuan},
+  title = {Using Mutual Information for Global Sensitivity Analysis on Watershed Modeling},
+  journal = {Water Resources Research},
+  volume = {58},
+  number = {10},
+  keywords = {global sensitivity analysis, mutual information, Sobol sensitivity analysis, SWAT},
+  doi = {https://doi.org/10.1029/2022WR032932},
+  abstract = {Abstract Global sensitivity analysis (GSA) often is applied to assess the sensitivity of model outputs to their inputs using ensemble simulations. However, increasing model complexity and the associated computational cost have limited the use of most GSA approaches for process-based watershed models. We propose to use mutual information (MI) as a computationally efficient GSA method for watershed modeling. Such MI computed from several hundred realizations usually can capture nonlinear relationships between inputs and outputs of interest. We perform MI-based watershed sensitivity analyses in studies of the Portage River Watershed in Ohio and the American River Watershed in Washington. In these studies, MI is used to evaluate the sensitivity of river discharges simulated by the Soil and Water Assessment Tool to no less than 20 SWAT parameters for each watershed. Our MI-based sensitivity analyses achieved convergence with about 300–500 realizations, a small fraction of the ensemble size (i.e., several thousands) required by the Sobol method. Nevertheless, the two-dimensional MI yields similar sensitivity ranking compared to Sobol's total-order sensitivity indices, especially for sensitive parameters. Our study thus sheds new light on the use of MI as an affordable GSA method for computationally intensive models such as the hyperresolution, watershed hydrobiogeochemical models.},
+  year = {2022}
+}
+
+@article{Chen2022,
+  author = {Chen, Kewei and Chen, Xingyuan and Song, Xuehang and Briggs, Martin A. and Jiang, Peishi and Shuai, Pin and Hammond, Glenn and Zhan, Hongbin and Zachara, John M.},
+  title = {Using Ensemble Data Assimilation to Estimate Transient Hydrologic Exchange Flow Under Highly Dynamic Flow Conditions},
+  journal = {Water Resources Research},
+  volume = {58},
+  number = {5},
+  keywords = {hydrologic exchange flow, data assimilation, hyporheic zone, heat tracer},
+  doi = {https://doi.org/10.1029/2021WR030735},
+  abstract = {Abstract Quantifying dynamic hydrologic exchange flows (HEFs) within river corridors that experience high-frequency flow variations caused by dam regulations is important for understanding the biogeochemical processes at the river water and groundwater interfaces. Heat has been widely used as a tracer to infer steady-state flow velocities through analytical solutions of heat transport defined by the diurnal temperature signals. Under sub-daily dynamic flow conditions, however, such analytical solutions are not applicable due to the violation of their fundamental assumptions. In this study, we developed a data assimilation-based approach to estimate the sub-daily flux under highly dynamic flow conditions using multi-depth temperature observations at a 5-min resolution. If the hydraulic gradient is measured, Darcy's law was used to calculate the flux with permeability estimated from temperature responses below the riverbed. Otherwise, flux was estimated directly by assimilating multi-depth temperature data at 1- or 2-hr time intervals assuming one-dimensional flow and heat transport governing equation. By comparing estimated fluxes with model-generated synthetic truth, we demonstrated that both schemes have robust performance in estimating fluxes under highly dynamic flow conditions. This data assimilation-based flux estimation method was able to capture the vertical sub-daily fluxes using multi-depth high-resolution temperature data alone, even in the presence of multi-dimensional flow. This approach has been successfully applied to real field temperature data collected at the Hanford site, which experiences highly dynamic HEFs. Our study shows the promise of adopting distributed 1-D temperature monitoring to capture spatial and temporal exchange dynamics in river corridors at a watershed scale or beyond.},
+  year = {2022}
+}
+
+@Article{Sun2022,
+  AUTHOR = {Sun, A. Y. and Jiang, P. and Yang, Z.-L. and Xie, Y. and Chen, X.},
+  TITLE = {A graph neural network (GNN) approach to basin-scale river network learning: the role of physics-based connectivity and data fusion},
+  JOURNAL = {Hydrology and Earth System Sciences},
+  VOLUME = {26},
+  YEAR = {2022},
+  NUMBER = {19},
+  PAGES = {5163--5184},
+  DOI = {10.5194/hess-26-5163-2022},
+  ABSTRACT = {Rivers and river habitats around the world are under sustained pressure from human activities and the changing global environment. Our ability to quantify and manage the river states in a timely manner is critical for protecting the public safety and natural resources. In recent years, vector-based river network models have enabled modeling of large river basins at increasingly fine resolutions, but are computationally demanding. This work presents a multistage, physics-guided, graph neural network (GNN) approach for basin-scale river network learning and streamflow forecasting. During training, we train a GNN model to approximate outputs of a high-resolution vector-based river network model; we then fine-tune the pretrained GNN model with streamflow observations. We further apply a graph-based, data-fusion step to correct prediction biases. The GNN-based framework is first demonstrated over a snow-dominated watershed in the western United States. A series of experiments are performed to test different training and imputation strategies. Results show that the trained GNN model can effectively serve as a surrogate of the process-based model with high accuracy, with median Kling–Gupta efficiency (KGE) greater than 0.97. Application of the graph-based data fusion further reduces mismatch between the GNN model and observations, with as much as 50 % KGE improvement over some cross-validation gages. To improve scalability, a graph-coarsening procedure is introduced and is demonstrated over a much larger basin. Results show that graph coarsening achieves comparable prediction skills at only a fraction of training cost, thus providing important insights into the degree of physical realism needed for developing large-scale GNN-based river network models.}
+}
+
+@article{Sun2021,
+  author = {Sun, Alexander Y. and Jiang, Peishi and Mudunuru, Maruti K. and Chen, Xingyuan},
+  title = {Explore Spatio-Temporal Learning of Large Sample Hydrology Using Graph Neural Networks},
+  journal = {Water Resources Research},
+  volume = {57},
+  number = {12},
+  keywords = {Streamflow forecasting, Large sample hydrology, Graph neural networks, Explainable AI, Machine learning, Prediction in Ungauged Basins},
+  doi = {https://doi.org/10.1029/2021WR030394},
+  abstract = {Abstract Streamflow forecasting over gauged and ungauged basins play a vital role in water resources planning, especially under the changing climate. Increased availability of large sample hydrology data sets, together with recent advances in deep learning techniques, has presented new opportunities to explore temporal and spatial patterns in hydrological signatures for improving streamflow forecasting. The purpose of this study is to adapt and benchmark several state-of-the-art graph neural network (GNN) architectures, including ChebNet, Graph Convolutional Network (GCN), and GraphWaveNet, for end-to-end graph learning. We explicitly represent river basins as nodes in a graph, learn the spatiotemporal nodal dependencies, and then use the learned relations to predict streamflow simultaneously across all nodes in the graph. The efficacy of the developed GNN models is investigated using the Catchment Attributes and MEteorology for Large-sample Studies (CAMELS) data set under two settings, fixed graph topology (transductive learning), and variable graph topology (inductive learning), with the latter applicable to prediction in ungauged basins (PUB). Results indicate that GNNs are generally robust and computationally efficient, achieving similar or better performance than a baseline model trained using the long short-term memory (LSTM) network. Further analyses are conducted to interpret the graph learning process at the edge and node levels and to investigate the effect of different model configurations. We conclude that graph learning constitutes a viable machine learning-based method for aggregating spatiotemporal information from a multitude of sources for streamflow forecasting},
+  year = {2021}
+}
+
+@article{Jiang2021,
+  title={Digital Twin Earth -- Coasts: Developing a fast and physics-informed surrogate model for coastal floods via neural operators}, 
+  author={Peishi Jiang and Nis Meinert and Helga Jordão and Constantin Weisser and Simon Holgate and Alexander Lavin and Björn Lütjens and Dava Newman and Haruko Wainwright and Catherine Walker and Patrick Barnard},
+  year={2021},
+  primaryClass={physics.ao-ph},
+  journal = {arxiv},
+  doi = {arXiv:2412.11942},
+}
+
+@article{Jiang2021b,
+  title = {DART-PFLOTRAN: An ensemble-based data assimilation system for estimating subsurface flow and transport model parameters},
+  journal = {Environmental Modelling & Software},
+  volume = {142},
+  year = {2021},
+  issn = {1364-8152},
+  doi = {https://doi.org/10.1016/j.envsoft.2021.105074},
+  author = {Peishi Jiang and Xingyuan Chen and Kewei Chen and Jeffrey Anderson and Nancy Collins and Mohamad EL. Gharamti},
+  keywords = {Data assimilation, Ensemble smoother, DART, PFLOTRAN, Inverse modeling, Subsurface flow and transport},
+  abstract = {Ensemble-based Data Assimilation (EDA) has been effectively applied to estimate model parameters through inverse modeling in subsurface flow and transport problems. To facilitate the management of EDA workflow and lower the barriers for adopting EDA-based parameter estimation in subsurface science, we develop a software framework linking the Data Assimilation Research Testbed (DART) with a massively parallel subsurface FLOw and TRANsport code PFLOTRAN. DART-PFLOTRAN enables an iterative EDA workflow based on the Ensemble Smoother for Multiple Data Assimilation method (ES-MDA) to improve estimation accuracy for nonlinear forward problems. We verify the implementation of ES-MDA in DART-PFLOTRAN using two synthetic cases designed to estimate static permeability and dynamic exchange fluxes across the riverbed from continuous temperature measurements. Both cases yield accurate estimations of the parameters compared to their synthetic truth. With a code base in Python and Fortran, DART-PFLOTRAN paves the way for large-scale inverse modeling using the sequential ES-MDA.}
+}
+
+@ARTICLE{Cromwell2021,
+  AUTHOR={Cromwell, Erol  and Shuai, Pin  and Jiang, Peishi  and Coon, Ethan T.  and Painter, Scott L.  and Moulton, J. David  and Lin, Youzuo  and Chen, Xingyuan },
+  TITLE={Estimating Watershed Subsurface Permeability From Stream Discharge Data Using Deep Neural Networks},
+  JOURNAL={Frontiers in Earth Science},
+  VOLUME={Volume 9 - 2021},
+  YEAR={2021},
+  DOI={10.3389/feart.2021.613011},
+  ISSN={2296-6463},
+  ABSTRACT={<p>Subsurface permeability is a key parameter in watershed models that controls the contribution from the subsurface flow to stream flows. Since the permeability is difficult and expensive to measure directly at the spatial extent and resolution required by fully distributed watershed models, estimation through inverse modeling has had a long history in subsurface hydrology. The wide availability of stream surface flow data, compared to groundwater monitoring data, provides a new data source to infer soil and geologic properties using integrated surface and subsurface hydrologic models. As most of the existing methods have shown difficulty in dealing with highly nonlinear inverse problems, we explore the use of deep neural networks for inversion owing to their successes in mapping complex, highly nonlinear relationships. We train various deep neural network (DNN) models with different architectures to predict subsurface permeability from stream discharge hydrograph at the watershed outlet. The training data are obtained from ensemble simulations of hydrographs corresponding to an permeability ensemble using a fully-distributed, integrated surface-subsurface hydrologic model. The trained model is then applied to estimate the permeability of the real watershed using its observed hydrograph at the outlet. Our study demonstrates that the permeabilities of the soil and geologic facies that make significant contributions to the outlet discharge can be more accurately estimated from the discharge data. Their estimations are also more robust with observation errors. Compared to the traditional ensemble smoother method, DNNs show stronger performance in capturing the nonlinear relationship between permeability and stream hydrograph to accurately estimate permeability. Our study sheds new light on the value of the emerging deep learning methods in assisting integrated watershed modeling by improving parameter estimation, which will eventually reduce the uncertainty in predictive watershed models.</p>}
+}
+
+
+@Article{Jiang2020,
+  AUTHOR = {Jiang, Peishi and Kumar, Praveen},
+  TITLE = {Bundled Causal History Interaction},
+  JOURNAL = {Entropy},
+  VOLUME = {22},
+  YEAR = {2020},
+  NUMBER = {3},
+  ARTICLE-NUMBER = {360},
+  PubMedID = {33286134},
+  ISSN = {1099-4300},
+  ABSTRACT = {Complex systems arise as a result of the nonlinear interactions between components. In particular, the evolutionary dynamics of a multivariate system encodes the ways in which different variables interact with each other individually or in groups. One fundamental question that remains unanswered is: How do two non-overlapping multivariate subsets of variables interact to causally determine the outcome of a specific variable? Here, we provide an information-based approach to address this problem. We delineate the temporal interactions between the bundles in a probabilistic graphical model. The strength of the interactions, captured by partial information decomposition, then exposes complex behavior of dependencies and memory within the system. The proposed approach successfully illustrated complex dependence between cations and anions as determinants of pH in an observed stream chemistry system. In the studied catchment, the dynamics of pH is a result of both cations and anions through mainly synergistic effects of the two and their individual influences as well. This example demonstrates the potentially broad applicability of the approach, establishing the foundation to study the interaction between groups of variables in a range of complex systems.},
+  DOI = {10.3390/e22030360}
+}
+
+@article{Goodwell2020,
+  author = {Goodwell, Allison E. and Jiang, Peishi and Ruddell, Benjamin L. and Kumar, Praveen},
+  title = {Debates—Does Information Theory Provide a New Paradigm for Earth Science? Causality, Interaction, and Feedback},
+  journal = {Water Resources Research},
+  volume = {56},
+  number = {2},
+  doi = {https://doi.org/10.1029/2019WR024940},
+  abstract = {Abstract The concept of causal interactions between components is an integral part of hydrology and Earth system sciences. Modelers, decision makers, scientists, and other water resources stakeholders all utilize some notion of cause-and-effect to understand processes, make decisions, and infer how systems react to change. However, there are different perspectives on the meaning of causality in complex systems and, further, different frameworks and methodologies with which to detect causal interactions. We propose here that information theory (IT) provides a compelling framework for the detection of causality and discuss approaches for several levels of analyses that capture interactions that range from pairwise to multivariate in nature. We illustrate these types of analyses with an example based on weather station time series variables, in which variables may interact pairwise or jointly and on short to long time scales. In general, many unsolved or even unanticipated questions in the hydrologic sciences could benefit from this perspective.},
+  year = {2020}
+}
+
+@article{Jiang2019,
+  author = {Jiang, Peishi and Kumar, Praveen},
+  title = {Using Information Flow for Whole System Understanding From Component Dynamics},
+  journal = {Water Resources Research},
+  volume = {55},
+  number = {11},
+  pages = {8305-8329},
+  keywords = {information flow, causal history analysis, partial information decomposition, stream chemistry, weighted transitive reduction, long memory process},
+  doi = {https://doi.org/10.1029/2019WR025820},
+  abstract = {Abstract Complex systems that exhibit emergent behaviors arise as a result of nonlinear interdependencies among multiple components. Characterizing how such whole system dynamics are sustained through multivariate interaction remains an open question. In this study, we propose an information flow-based framework to investigate how the present state of any component arises as a result of the past interactions among interdependent variables, which is termed as causal history. Using a partitioning time lag, we divide this into immediate and distant causal history components and then characterize the information flow-based interactions within these as self- and cross-feedbacks. Such a partition allows us to characterize the information flow from the two feedbacks in both histories by using partial information decomposition as unique, synergistic, or redundant interactions. We employ this casual history analysis approach to investigate the information flows in a short-memory coupled logistic model and a long-memory observed stream chemistry dynamics. While the dynamics of the short-memory system are mainly maintained by its recent historical states, the current state of each stream solute is sustained by self-feedback-dominated recent dynamics and cross-dependency-dominated earlier dynamics. The analysis suggests that the observed 1/f signature of each solute is a result of the interactions with other variables in the stream. Based on high-density data streams, the approach developed here for investigating multivariate evolutionary dynamics provides an effective way to understand how components of dynamical system interact to create emergent whole system behavioral patterns such as long-memory dependency.},
+  year = {2019}
+}
+
+@article{Jiang2019b,
+  title = {Information transfer from causal history in complex system dynamics},
+  author = {Jiang, Peishi and Kumar, Praveen},
+  journal = {Phys. Rev. E},
+  volume = {99},
+  issue = {1},
+  pages = {012306},
+  numpages = {13},
+  year = {2019},
+  month = {Jan},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevE.99.012306},
+  abstract = {In a multivariate evolutionary system, the present state of a variable is a resultant outcome of all interacting variables through the temporal history of the system. How can we quantify the information transfer from the history of all variables to the outcome of a specific variable at a specific time? We develop information theoretic metrics to quantify the information transfer from the entire history, called causal history. Further, we partition this causal history into immediate causal history, as a function of lag 𝜏 from the recent time, to capture the influence of recent dynamics, and the complementary distant causal history. Further, each of these influences are decomposed into self- and cross-feedbacks. By employing a Markov property for directed acyclic time-series graph, we reduce the dimensions of the proposed information-theoretic measure to facilitate an efficient estimation algorithm. This approach further reveals an information aggregation property, that is, the information from historical dynamics are accumulated at the preceding time directly influencing the present state of variable(s) of interest. These formulations allow us to analyze complex inter-dependencies in unprecedented ways. We illustrate our approach for: (1) characterizing memory dependency by analyzing a synthetic system with short memory; (2) distinguishing from traditional methods such as lagged mutual information using the Lorenz chaotic model; (3) comparing the memory dependencies of two long-memory processes with and without the strange attractor using the Lorenz model and a linear Ornstein-Uhlenbeck process; and (4) illustrating how dynamics in a complex system is sustained through the interactive contribution of self- and cross-dependencies in both immediate and distant causal histories, using the Lorenz model and observed stream chemistry data known to exhibit 1/𝑓 long memory.}
+}
+
+@article{Jiang2018,
+  title = {Interactions of information transfer along separable causal paths},
+  author = {Jiang, Peishi and Kumar, Praveen},
+  journal = {Phys. Rev. E},
+  volume = {97},
+  issue = {4},
+  pages = {042310},
+  numpages = {21},
+  year = {2018},
+  month = {Apr},
+  publisher = {American Physical Society},
+  doi = {10.1103/PhysRevE.97.042310},
+  abstract = {Complex systems arise as a result of interdependences between multiple variables, whose causal interactions can be visualized in a time-series graph. Transfer entropy and information partitioning approaches have been used to characterize such dependences. However, these approaches capture net information transfer occurring through a multitude of pathways involved in the interaction and as a result mask our ability to discern the causal interaction within a subgraph of interest through specific pathways. We build on recent developments of momentary information transfer along causal paths proposed by Runge [Phys. Rev. E 92, 062829 (2015)] to develop a framework for quantifying information partitioning along separable causal paths. Momentary information transfer along causal paths captures the amount of information transfer between any two variables lagged at two specific points in time. Our approach expands this concept to characterize the causal interaction in terms of synergistic, unique, and redundant information transfer through separable causal paths. Through a graphical model, we analyze the impact of the separable and nonseparable causal paths and the causality structure embedded in the graph as well as the noise effect on information partitioning by using synthetic data generated from two coupled logistic equation models. Our approach can provide a valuable reference for an autonomous information partitioning along separable causal paths which form a causal subgraph influencing a target.}
+}
+
+@article{Jiang2017,
+  title = {A service-oriented architecture for coupling web service models using the Basic Model Interface (BMI)},
+  journal = {Environmental Modelling & Software},
+  volume = {92},
+  pages = {107-118},
+  year = {2017},
+  issn = {1364-8152},
+  doi = {https://doi.org/10.1016/j.envsoft.2017.01.021},
+  author = {Peishi Jiang and Mostafa Elag and Praveen Kumar and Scott Dale Peckham and Luigi Marini and Liu Rui},
+  keywords = {Integrated modeling, Service-oriented architecture, The Basic Model Interface, EMELI-Web},
+  abstract = {Service-oriented approach for model coupling is gradually gaining momentum. By leveraging the World Wide Web, the service-oriented approach lowers the interoperability barrier of integrating models in terms of programming languague and operating system. While such paradigm has been applied to integrate models wrapped with some standard interfaces, this paper considers the Basic Model Interface (BMI) as model interface. The advantages of BMI are that it (1) enrich the semantics of variable names, and (2) is framework-agnostic. We exposed the BMI-enabled models through web services. Then, a smart modeling framework, the Experimental Modeling Environment for Linking and Interoperability (EMELI), was enhanced into a web application (i.e., EMELI-Web) to integrate the BMI-enabled web service models. By implementing the whole orchestration in coupling TopoFlow components, we demonstrate that BMI helps connect web service models by reducing the heterogeneity of variable names, and EMELI-Web makes it convenient to couple BMI-enabled web service models.}
+}
+
+@article{Jiang2015,
+  title={Incorporating daily rainfalls to derive rainfall DDF relationships at ungauged sites in Hong Kong and quantifying their uncertainty},
+  author={Jiang, Peishi and Tung, Yeou-Koung},
+  journal={Stochastic environmental research and risk assessment},
+  volume={29},
+  pages={45--62},
+  year={2015},
+  publisher={Springer},
+  doi = {https://doi.org/10.1007/s00477-014-0915-2},
+  abstract = {Rainfall depth-duration-frequency (DDF) relationships are essential inputs for the design and management of various hydrosystem infrastructures (e.g., urban drainages, dams, dykes, etc.). In many cases, rainfall DDF relationships are required at a location where there is no gauge. However, due to the presence of intrinsic randomness of the precipitation process, limited rainfall record, and spatial interpolation, the derived DDF relationships at ungauged sites are subject to uncertainty. This is especially true in Hong Kong with regard to record length. To enhance the utilization of available rainfall data, a daily precipitation-based DDF generation framework for conventional rain gauges in Hong Kong has been developed by the authors utilizing a scaling model. In this article, the methodological framework is extended to derive rainfall DDF relationships at ungauged sites. Owing to the nonlinearity and complexity of the modeling process, exact statistical features of derived DDF relationships are difficult to obtain. In this study, Harr’s probabilistic point estimation method, known for its computational simplicity and accuracy, is applied to quantify the uncertainty features of rainfall DDF relationships derived for ungauged sites in Hong Kong. For illustration, four locations in different geographical locations in Hong Kong are considered. The results show that the uncertainty associated with the estimated statistical moments of annual maximum daily rainfall is significant in contributing to the overall uncertainty of derived rainfall DDF relationships.}
+}
+
+@article{Jiang2013,
+title = {Establishing rainfall depth–duration–frequency relationships at daily raingauge stations in Hong Kong},
+journal = {Journal of Hydrology},
+volume = {504},
+pages = {80-93},
+year = {2013},
+issn = {0022-1694},
+doi = {https://doi.org/10.1016/j.jhydrol.2013.09.037},
+author = {Peishi Jiang and Yeou-Koung Tung},
+keywords = {Rainfall IDF/DDF, Scaling model, Cluster analysis, Uncertainty analysis, GEV, WLS},
+abstract = {Rainfall intensity (depth)–duration–frequency (IDF/DDF) relationships provide information essential for urban stormwater drainage system design and other hydrosystem infrastructures. For catchments where drainage areas are small, rainfall DDF relationships with short duration can be established based on rainfall records from automatic raingauges. Due to the progression of technology development, wide spread installation of automatic raingauges does not happen until 2–3 decades ago. Therefore, record lengths at majority of automatic raingauges are relatively short and the derived rainfall DDF relationships on the basis of at-site frequency analysis are potentially subject to significant sampling error. On the other hand, many conventional raingauges exist long before automatic raingauges were deployed. However, daily rainfall data with long records at conventional raingauges are of limited use to establish rainfall DDF relationships in areas with small catchment size like Hong Kong where design storm duration significantly shorter than 24-h are needed. This study presents a practical methodological framework to derive rainfall DDF relationships with short duration at conventional raingauge locations. The core components of the framework include the scaling model of rainfalls of different durations, the establishment of relationship between annual maximum daily rainfall and rolling-time 1440min rainfall, the quantification of statistical features of estimated annual maximum 1440min rainfalls, and the assessment of uncertainty of derived rainfall DDF relationships at conventional raingauges.}
+}
+
+
+# Softwares
 @software{example_software,
   author = {J. Doe},
   title = {Example software},
   url = {https://example.com},
   date = {2040},
-}
-
-@inproceedings{example_proceeding,
-    Author = {J. Doe},
-    Year = {2040},
-    Title = {Example title},
-    Booktitle = {Example Book},
-    Address = {Pasadena, CA},
-    file = {example_proceeding.pdf},
-    abstract = {Example abstract.},
-}
-
-@incollection{example_conference,
-    author = {J. Doe},
-    title = {Example talk},
-    note = {Example Conference},
-    year = {2040},
-}
-
-@unpublished{feynman06,
-    Author = {R. P. Feynman and J. M. Cline},
-    Title = {Feynman lectures on the strong interations},
-    Note = {arXiv:2006.08594},
-    doi = {2006.08594},
-    file = {feynman06.pdf},
-    abstract = {These twenty-two lectures, with exercises, comprise the extent of what was meant to be a full-year graduate-level course on the strong interactions and QCD, given at Caltech in 1987-88. The course was cut short by the illness that led to Feynman's death. Several of the lectures were finalized in collaboration with Feynman for an anticipated monograph based on the course. The others, while retaining Feynman's idiosyncrasies, are revised similarly to those he was able to check. His distinctive approach and manner of presentation are manifest throughout. Near the end he suggests a novel, nonperturbative formulation of quantum field theory in D dimensions. Supplementary material is provided in appendices and ancillary files, including verbatim transcriptions of three lectures and the corresponding audiotaped recordings.},
-}
-
-@article{feynman1939forces,
-  title={Forces in molecules},
-  author={R. P. Feynman},
-  journal={Physical Review},
-  volume={56},
-  number={4},
-  pages={340},
-  year={1939},
-  doi={10.1103/PhysRev.56.340},
-  file={feynman39.pdf},
-  abstract={Formulas have been developed to calculate the forces in a molecular system directly, rather than indirectly through the agency of energy. This permits an independent calculation of the slope of the curves of energy vs. position of the nuclei, and may thus increase the accuracy, or decrease the labor involved in the calculation of these curves. The force on a nucleus in an atomic system is shown to be just the classical electrostatic force that would be exerted on this nucleus by other nuclei and by the electrons' charge distribution. Qualitative implications of this are discussed.},
 }
 

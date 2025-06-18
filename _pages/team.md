@@ -5,11 +5,11 @@ sitemap: false
 permalink: /team/
 ---
 
-## Team
+### Team
 
 <!-- **We are looking for new team members** [(see openings)]({{ site.url }}{{ site.baseurl }}/vacancies) **!** -->
 
-## PI
+### PI
 
 {% for member in site.data.pi %}
 
@@ -35,7 +35,7 @@ permalink: /team/
 
 {% endfor %}
 
-## Current Members
+### Current Members
 
 <div class='jumbotron'>
 {% assign number_printed = 0 %}
@@ -118,6 +118,6 @@ permalink: /team/
 {% endif %}
 </div> -->
 
-## Administrative Support
+### Administrative Support
 
 <a href="exampleemail@gmail.com">Example staff</a> is helping us (and other groups) with administration.

@@ -5,8 +5,9 @@ sitemap: false
 permalink: /teaching/
 ---
 
-## Teaching
+### Teaching
 
-* Introduction to Physics (1961--63) [Textbook here!](https://www.feynmanlectures.caltech.edu/)
+* Fall 2025: GES255 Engineering Statistics I
+<!-- * Introduction to Physics (1961--63) [Textbook here!](https://www.feynmanlectures.caltech.edu/) -->
 
 
